@@ -2,6 +2,9 @@
 #define KALMAN_FILTER_H_
 
 #include "Eigen/Dense"
+#include <fstream>
+#include <string>
+#include <vector>
 
 class KalmanFilter {
  public:

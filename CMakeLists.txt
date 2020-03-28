@@ -1,3 +1,6 @@
+set(CMAKE_CXX_COMPILER "/usr/bin/c")
+set(CMAKE_CXX_COMPILER "/usr/bin/c++")
+
 project(ExtendedKF)
 
 cmake_minimum_required (VERSION 3.5)
@@ -14,6 +17,8 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
 include_directories(/usr/local/include)
 include_directories(/usr/local/opt/openssl/include)
+include_directories(/usr/local/opt)
+include_directories(/usr/bin/)
 link_directories(/usr/local/lib)
 link_directories(/usr/local/opt/openssl/lib)
 link_directories(/usr/local/Cellar/libuv/1*/lib)
